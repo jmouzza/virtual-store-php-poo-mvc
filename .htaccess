@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+#Estás son condiciones para que no reescriba y permita cargar ficheros y directorios sin reescribirlos ejemplo css js#
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT-FILENAME} !-d
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>

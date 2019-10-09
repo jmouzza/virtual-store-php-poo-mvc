@@ -1,0 +1,475 @@
+/*---GENERALES---*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif, Helvetica;
+    text-decoration: none;
+    list-style: none;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+body{
+    background: url(../img/bg.png)
+}
+a{
+    color: #01B1EA;
+}
+a:visited{
+    color: #01B1EA;
+}
+a:hover{
+    color: #555555;
+}
+
+/*---CONTENEDOR---*/
+#container{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+}
+/*---CABECERA---*/
+#header{
+    background: #f0f0f0;
+    height: 145px;
+}
+#logo{
+    margin-left: 20px;
+    line-height: 140px;
+}
+#logo img {
+    height: 140px;
+    float: left;
+    padding: 5px;
+}
+#logo a{
+   
+    font-family: 'Open Sans', Helvetica, Arial;
+    font-size: 35px;
+    //letter-spacing: 3px;
+    margin-left: 25px;
+    line-height: 145px;
+    color: #01b1ea;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px #666666;
+}
+#logo a:hover{
+    text-shadow: 2px 2px 1px #666666, 0px 0px 4px #01B1EA;
+    transition: all 300ms;
+}
+/*---MENU---*/
+#menu{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    background: #222;
+    border-bottom: 5px solid #01B1EA;
+    margin-bottom: 30px;
+}
+#menu li{
+    float: left;
+    width: 90px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-right: 1px groove #01B1EA;
+}
+#menu li:first-child{
+    border-left: 1px groove #01B1EA;
+}
+#menu a{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#menu a:hover{
+    transition: all 350ms;
+    color: white;
+    font-size: 13px;
+    text-shadow: 0px 0px 4px #cccccc;
+}
+
+/*---PRINCIPAL---*/
+#contenido{
+    width: 100%;
+    min-height: 300px;
+}
+/*--BARRA LATERAL---*/
+#sidebar{
+    float: left;
+    width: 18%;
+}
+#usuario_logueado{
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #555555; 
+}
+#login form{
+    width: 100%;
+    text-align: center;
+}
+.titulos{
+    padding: 2px;
+    color: #666666;
+    text-decoration: underline; 
+    margin-left: 4px;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+#error_login{
+     margin-left: 25px;
+     color: red;
+}
+//Formulario registro usuario
+label{
+    display:block;
+}
+label,
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='file'], 
+select{
+    display:block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+input[type='submit']{
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 7px;
+    background: #01B1EA;
+    color:white;
+    border: 0px;
+}
+input[type='submit']:hover{
+    background: #999999;
+    transition: all 200ms;
+    cursor: pointer;
+}
+img.imagen_formulario {
+    margin-left: 110px;
+}
+#botones-sidebar li{
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+#botones-sidebar li:first-child{
+    margin-top: 20px;
+}
+#registrarse {
+    display: block;
+    text-align: center;
+}
+/*---PRODUCTOS---*/
+#central{
+    float: right;
+    width: 80%; 
+}
+.product{
+    width: 25%;
+    height: 330px;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid transparent;
+    position: relative;
+}
+/*Posicionar el elemento al fondo del div*/
+.div_comprar{ 
+    width:100%;  
+    position:absolute; 
+    bottom:0%; 
+    
+}
+.product:hover{
+    transition: all 600ms;
+    cursor: pointer;
+    border: 1px solid #999999;
+}
+#central img{
+    width: 100px;
+}
+.product h2{
+    font-size: 17px;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    margin-left: 8px;
+    text-align: left;  
+    color: black;
+}
+.product p{
+    font-size: 15px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: black;
+}
+#contenedor_detalle_producto{
+    width: 90%;
+}
+#contenedor_detalle_producto img{
+    width: 40%;
+    float: left;
+}
+#nombre_producto_detalle{
+    margin-bottom: 20px;
+}
+#detalle_producto{
+    float: right;
+    width: 45%;
+    margin-top: 25px;
+    margin-right: 10px;
+    line-height: 25px;
+    text-align: justify;
+}
+#detalle_producto a{
+    width: 40%;
+    text-align: center;
+}
+.product a:visited{
+    color: white;
+}
+.button{
+    color: white;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background: #23b839;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    transition: all 150ms; 
+    background: #2a963e; 
+}
+table{
+    width: 90%;
+    border: 1px solid black;
+}
+table#table_categoria {
+    width: 35%;
+    text-align: left;
+}
+th#table_categoria_first {
+    width: 25px;
+}
+th{
+    border-right: 1px solid black;
+    text-align: left; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+th:last-child{
+    border-right: 0px;
+      
+}
+th:first-child{
+   text-align: center;      
+}
+td{
+   border-top: 1px solid black;
+   border-right: 1px solid black;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+tr:hover{
+   background: #cccccc;
+}
+tr:first-child:hover{
+   background: transparent;
+}
+td:last-child{
+   border-right: 0px;
+   text-align: center;
+   width: 115px;
+}
+td:first-child{
+   text-align: center;      
+}
+a.boton_acciones_producto {
+    color: white;
+}
+#edicion_producto{
+    font-size: 12px;    
+    color:white;
+    background: #01B1EA; 
+    padding: 3px 6px 3px 6px;
+    border-radius: 4px;
+}  
+#edicion_producto:hover{
+    transition: 150ms all;
+    background: #004bac; 
+}
+#eliminar_producto{
+    font-size: 12px;    
+    color:white;
+    background: #ff6666; 
+    padding: 3px 6px 3px 6px;
+    border-radius: 4px;
+}
+#eliminar_producto:hover{
+    transition: 150ms all;
+    background: #cc0000;
+} 
+.button-categoria{
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+a.button.button-categoria {
+    color: white;
+}
+#boton_crear_categoria{
+    margin-left: 95px;
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/*---FOOTER---*/
+
+#footer{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+}
+#footer p{
+    line-height: 70px;
+}
+
+/*---CARRITO---*/
+
+#tabla_carrito{
+    width: 80%;
+    margin: 15px auto;
+    margin-top: 30px;
+    border: none;
+}
+#tabla_carrito tr,
+#tabla_carrito th,
+#tabla_carrito td{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#tabla_carrito tr:hover{
+    background: none;
+}
+
+#estadisticas_carrito{
+    width: 32%;
+    text-align: center;
+    margin: 0px auto;
+}
+#estadisticas_carrito #vaciar{
+    background: red;
+    color: white;
+    width: 140px;
+    line-height: 35px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+}
+#estadisticas_carrito #vaciar:hover{
+    background: #cc0000;
+    transition: 200ms all;
+}
+#vaciar{
+    background: red;
+    color: white;
+    width: 140px;
+    line-height: 35px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+}
+#estadisticas_carrito #vaciar:hover{
+    background: #cc0000;
+    transition: 200ms all;
+}
+
+#tabla_updown_unidades{
+   
+    text-align: center;
+}
+.updown_unidades {
+    display: block;
+    background: #01B1EA;
+    color: white;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 46px;
+    margin-down: 10x;
+}
+.updown_unidades:hover{
+   background: #004bac;
+   transition: 100ms all;
+}
+.updown_unidades {
+    display: block;
+    background: #01B1EA;
+    color: white;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 46px;
+}
+#quitar_producto{
+    background: red;
+    color: white;
+    width: 140px;
+    line-height: 28px;
+    border-radius: 3px;
+    float: right;
+    margin-top: 10px;
+}
+#quitar_producto:hover{
+    background: #cc0000;
+    transition: 200ms all;
+}
+#estadisticas_carrito #confirmar_pedido{
+    background: #01B1EA;
+    color: white;
+    width: 155px;
+    line-height: 35px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+}
+#estadisticas_carrito #confirmar_pedido:hover{
+    background: #004bac;
+    transition: 200ms all;
+}
